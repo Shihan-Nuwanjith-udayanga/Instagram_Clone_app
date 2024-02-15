@@ -84,7 +84,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   controller: _passwordController,
                   hintText: "Enter a Password",
                   isPassword: true,
-                  inputKeyboardType: TextInputType.emailAddress,
+                  inputKeyboardType: TextInputType.text,
                 ),
                 const SizedBox(
                   height: 20,
@@ -93,7 +93,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   controller: _userNameController,
                   hintText: "Enter a Username",
                   isPassword: false,
-                  inputKeyboardType: TextInputType.emailAddress,
+                  inputKeyboardType: TextInputType.text,
                 ),
                 const SizedBox(
                   height: 20,
@@ -102,7 +102,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   controller: _bioController,
                   hintText: "Enter Bio",
                   isPassword: false,
-                  inputKeyboardType: TextInputType.emailAddress,
+                  inputKeyboardType: TextInputType.text,
                 ),
                 const SizedBox(
                   height: 30,
