@@ -53,6 +53,17 @@ class AuthMethods {
           res = "success";
         }
       }
+    }
+
+    // cath the errors extra error handling
+    on FirebaseAuthException catch (error) {
+      if (error.code == 'invalid-email') {
+        res = "invalid-email";
+      } else if (error.code == 'weak-password') {
+        res = "weak-password";
+      } else if (error.code == 'email-already-in-use') {
+        res = "email-already-in-use";
+      }
     } catch (error) {
       // print(error.toString());
       res = error.toString();
